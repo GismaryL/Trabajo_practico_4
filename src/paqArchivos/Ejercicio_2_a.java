@@ -59,7 +59,7 @@ public class Ejercicio_2_a {
 			
 			do{
 				System.out.println("Seleccione una opcion:");
-				System.out.println("+ --> Sumar los numeros.");
+				System.out.println("+ --> Sumar los numeros");
 				System.out.println("* --> Multiplicar los numeros");
 				opcion = print.next().charAt(0); // metodo para imprimir el siguiente el primer caracter que encuentre
 				
@@ -87,22 +87,21 @@ public class Ejercicio_2_a {
 			for(int i = 0;  i < arrayDeNum.length; i++) {
 				
 				if(operMulti == 0) {
-					operMulti = Double.valueOf(arrayDeNum[i]);
-				}
-				operMulti = operMulti * Double.valueOf(arrayDeNum[i]);
+					operMulti = Double.parseDouble(arrayDeNum[i]);
+				
+				}else
+					
+				operMulti *= Double.parseDouble(arrayDeNum[i]);
 			}
 			//El primer % indica la posición  * .2 n° de decimales. * La f n° es de tipo float. * El valor a escribir se encuentra a continuación de las comillas.
-			System.out.printf("La multiplicacion de los numeros es: %.2f" , operMulti); // printf para dar formato a los datos de salida
-					                                           
-					                                           
-					                                            
-					                                            
-					                                           	 
-					                                           
+			System.out.printf("La multiplicacion de los numeros es: %.2f" , operMulti); // printf para dar formato float a los datos de salida	                                           
+                                 
 					                                            
 		}
 		
-		
+
 		
 		}
 }
+
+
